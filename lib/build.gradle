@@ -28,6 +28,9 @@ dependencies {
 	// 코틀린
 	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
+	// BoxResin
+	implementation 'boxresin.android.core:core:0.1.0'
+
 	// 테스트
 	testImplementation 'junit:junit:4.12'
 
