@@ -4,12 +4,16 @@ buildscript {
 	repositories {
 		google()
 		jcenter()
+		maven { url 'https://dl.bintray.com/minyushov/gradle' }
 		maven { url 'https://dl.bintray.com/boxresin/maven/' }
 	}
 
 	dependencies {
 		classpath 'com.android.tools.build:gradle:3.3.0-alpha08'
 		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+		// Bintray 업로더
+		classpath 'com.minyushov.gradle:bintray:1.1.0'
 	}
 }
 

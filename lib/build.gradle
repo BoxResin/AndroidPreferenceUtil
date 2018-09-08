@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.minyushov.bintray'
+
+// Bintray 업로드 설정
+bintrayUpload {
+	// 패키지 정보
+	groupId = 'boxresin.android.preference'
+	artifactId = 'settings'
+	version = '0.1.0'
+
+	// Bintray 정보
+	repo = 'maven'
+	pkgName = "boxresin.android.preference:settings"
+	vcsUrl = 'https://github.com/BoxResin/AndroidPreferenceUtil.git'
+	license = 'MIT'
+
+	// 기타
+	dryRun = false // Bintray 로 배포가 자동으로 되는 것을 막는다. (사이트에서 수동으로 승인해야 함)
+	docs = true
+	sources = true
+
+	// user 와 key 는 셸에서 입력
+	user = findProperty('user') ?: 'none'
+	key = findProperty('key') ?: 'none'
+}
 
 android {
 	compileSdkVersion 28
