@@ -20,7 +20,7 @@ allprojects {
 ```gradle
 dependencies {
     ...
-    implementation 'boxresin.android.preference:settings:0.1.0' // Add this line.
+    implementation 'boxresin.android:preference:0.2.0' // Add this line.
 }
 ```
 
