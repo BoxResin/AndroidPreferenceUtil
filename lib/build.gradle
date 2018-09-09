@@ -7,7 +7,7 @@ bintrayUpload {
 	// 패키지 정보
 	groupId = 'boxresin.android'
 	artifactId = 'preference'
-	version = '0.2.0'
+	version = '0.2.1'
 
 	// Bintray 정보
 	repo = 'maven'
