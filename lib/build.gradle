@@ -5,13 +5,13 @@ apply plugin: 'com.minyushov.bintray'
 // Bintray 업로드 설정
 bintrayUpload {
 	// 패키지 정보
-	groupId = 'boxresin.android.preference'
-	artifactId = 'settings'
+	groupId = 'boxresin.android'
+	artifactId = 'preference'
 	version = '0.2.0'
 
 	// Bintray 정보
 	repo = 'maven'
-	pkgName = "boxresin.android.preference:settings"
+	pkgName = 'boxresin.android:preference'
 	vcsUrl = 'https://github.com/BoxResin/AndroidPreferenceUtil.git'
 	license = 'MIT'
 
@@ -53,7 +53,7 @@ dependencies {
 	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 	// BoxResin
-	implementation 'boxresin.android.core:core:0.1.0'
+	implementation 'boxresin.android:core:0.2.0'
 
 	// 테스트
 	testImplementation 'junit:junit:4.12'
